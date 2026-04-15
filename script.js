@@ -9,7 +9,6 @@ const AUTOSAVE_DEBOUNCE_MS = 400;
 
 const contactForm = document.querySelector("#contact-form");
 const contactStatus = document.querySelector("#contact-status");
-const clearDraftButton = document.querySelector("#contact-clear-draft");
 
 function setStatus(message, type = "neutral") {
   if (!contactStatus) {
@@ -128,15 +127,6 @@ if (contactForm) {
       persistCurrentForm();
     }, AUTOSAVE_DEBOUNCE_MS);
   });
-
-  if (clearDraftButton) {
-    clearDraftButton.addEventListener("click", () => {
-      contactForm.reset();
-      clearDraft();
-      lastSubmittedState = null;
-      setStatus("Draft cleared.");
-    });
-  }
 
   window.addEventListener("beforeunload", (event) => {
     if (isSubmitting || !hasUnsentChanges()) {
