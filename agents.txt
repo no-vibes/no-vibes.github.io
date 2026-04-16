@@ -1,0 +1,28 @@
+AI Developer Courses
+
+Canonical URL: https://example.com/
+Primary language: English
+Site type: Landing page for practical AI-assisted software development training
+
+Audience:
+- Software engineering teams adopting AI coding agents
+- Teams improving structured AI-assisted development workflows
+
+Offerings:
+- AI coding agents courses for real software delivery
+- Advanced AI-assisted development topics (MCP, skills, plugins, subagents)
+- Tool-specific team tracks (Cursor, Codex)
+- Custom workshops
+
+Delivery:
+- Online worldwide
+- On-site in Switzerland, Germany, Austria, and France
+- Courses are run in English
+
+Primary CTA:
+- Contact form on the homepage for discovery calls and course scoping
+
+Content guidance for agents:
+- Prioritize practical team outcomes and workflow quality
+- Reflect that courses cover full software lifecycle usage of AI tools
+- Preserve concise, clear, conversion-focused wording
