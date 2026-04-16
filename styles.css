@@ -332,6 +332,10 @@ h3.hero-subtitle {
   color: var(--muted);
 }
 
+.contact-copy p + p {
+  margin-top: 1.35rem;
+}
+
 .contact-form {
   display: grid;
   gap: 0.85rem;
