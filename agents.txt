@@ -1,6 +1,6 @@
 AI Developer Courses
 
-Canonical URL: https://example.com/
+Canonical URL: https://no-vibes.github.io/
 Primary language: English
 Site type: Landing page for practical AI-assisted software development training
 
