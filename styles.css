@@ -17,7 +17,7 @@
     linear-gradient(150deg, rgba(253, 253, 255, 0.97) 0%, rgba(239, 243, 251, 0.9) 100%);
   --section-separator: rgba(122, 145, 186, 0.5);
   --section-panel-shadow: 0 10px 28px rgba(35, 57, 100, 0.08);
-  --hero-subtitle: #7a56ad;
+  --hero-subtitle: #7a63a8;
 }
 
 *,
@@ -184,11 +184,11 @@ h3 {
   font-size: 1.2rem;
 }
 
-h2.hero-subtitle {
+.hero-subtitle {
   margin: 0 0 0.75rem;
   max-width: 34ch;
-  font-size: clamp(1.06rem, 2.05vw, 1.26rem);
-  font-weight: 600;
+  font-size: clamp(1rem, 2.45vw, 1.24rem);
+  font-weight: 500;
   line-height: 1.38;
   letter-spacing: -0.012em;
   color: var(--hero-subtitle);
