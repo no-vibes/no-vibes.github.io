@@ -213,6 +213,28 @@ a {
   letter-spacing: 0.028em;
   text-transform: uppercase;
   font-size: clamp(1rem, 2.45vw, 1.24rem);
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.65rem;
+}
+
+.eyebrow-main {
+  display: inline;
+}
+
+.eyebrow-label {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.18rem 0.6rem;
+  border-radius: 999px;
+  background: #c9e6ff;
+  color: #0f3c7a;
+  border: 1px solid rgba(29, 90, 166, 0.2);
+  box-shadow: 0 4px 12px rgba(7, 24, 50, 0.22);
+  font-size: 0.78em;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 
 h1,
@@ -532,6 +554,11 @@ h3 {
 }
 
 @media (max-width: 760px) {
+  .eyebrow-label {
+    flex-basis: 100%;
+    width: fit-content;
+  }
+
   .brand {
     font-size: 1.05rem;
   }
