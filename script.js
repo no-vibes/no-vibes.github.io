@@ -1,7 +1,59 @@
 const yearEl = document.querySelector("#year");
+const siteNav = document.querySelector("#primary-nav");
+const navToggle = document.querySelector(".nav-toggle");
 
 if (yearEl) {
   yearEl.textContent = String(new Date().getFullYear());
+}
+
+if (siteNav && navToggle) {
+  const MOBILE_NAV_BREAKPOINT = 980;
+
+  function isMobileViewport() {
+    return window.innerWidth <= MOBILE_NAV_BREAKPOINT;
+  }
+
+  function syncNavVisibility() {
+    if (isMobileViewport()) {
+      navToggle.style.display = "inline-flex";
+      siteNav.style.display = siteNav.classList.contains("is-open") ? "flex" : "none";
+      return;
+    }
+
+    navToggle.style.display = "none";
+    siteNav.style.display = "flex";
+  }
+
+  function closeMobileNav() {
+    siteNav.classList.remove("is-open");
+    navToggle.setAttribute("aria-expanded", "false");
+    navToggle.setAttribute("aria-label", "Open menu");
+    syncNavVisibility();
+  }
+
+  navToggle.addEventListener("click", () => {
+    const isOpen = siteNav.classList.toggle("is-open");
+    navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    navToggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+    syncNavVisibility();
+  });
+
+  siteNav.addEventListener("click", (event) => {
+    const target = event.target;
+    if (target instanceof HTMLAnchorElement) {
+      closeMobileNav();
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 980) {
+      closeMobileNav();
+    }
+
+    syncNavVisibility();
+  });
+
+  syncNavVisibility();
 }
 
 const DRAFT_KEY = "aiCourseSite.contactDraft.v1";

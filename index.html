@@ -88,7 +88,18 @@
     <header class="site-header">
       <div class="container nav-shell">
         <a class="brand" href="#top">AI Developer Courses</a>
-        <nav class="site-nav" aria-label="Primary">
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+        <nav id="primary-nav" class="site-nav" aria-label="Primary">
           <a href="#what-we-do">What we do</a>
           <a href="#for-whom">For whom</a>
           <a href="#courses">Courses</a>
@@ -103,7 +114,7 @@
       <section id="what-we-do" class="hero section section-tone-a">
         <div class="container hero-grid">
           <div>
-            <p class="eyebrow">AI&#8209;assisted software development training</p>
+            <p class="eyebrow">AI&#8209;assisted software development - training for teams</p>
             <h1>
               Practical training for teams migrating to AI&#8209;oriented software development
            </h1>
