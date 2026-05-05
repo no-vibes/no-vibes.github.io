@@ -298,6 +298,17 @@ h3 {
   font-size: 1.2rem;
 }
 
+.hero-card-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  margin: 0 0 1rem;
+  background: rgba(7, 18, 37, 0.45);
+}
+
 .hero-card ul,
 .card ul {
   margin: 0;
@@ -380,6 +391,39 @@ h3 {
 .card p {
   margin-top: 0;
   color: var(--muted);
+}
+
+.card-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 0 0 0.95rem;
+  border: 1px solid var(--border);
+  background: rgba(7, 18, 37, 0.45);
+}
+
+.team-image {
+  display: block;
+  width: min(680px, 100%);
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 14px;
+  margin: 0 0 1rem;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-soft);
+}
+
+.contact-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 0 0 1.1rem;
+  border: 1px solid var(--border);
+  background: rgba(7, 18, 37, 0.45);
 }
 
 .section-cta {
@@ -554,9 +598,14 @@ h3 {
 }
 
 @media (max-width: 760px) {
-  .eyebrow-label {
+  .eyebrow-main {
     flex-basis: 100%;
-    width: fit-content;
+  }
+
+  .eyebrow-label {
+    flex-basis: auto;
+    width: auto;
+    align-self: flex-start;
   }
 
   .brand {
